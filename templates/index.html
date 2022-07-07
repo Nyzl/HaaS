@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block hex %}
+
+<div id="contents" class="app-c-contents-list-with-body gem-c-govspeak">
+    <div>
+        <h2><p>This is your reading </p></h2>
+        <p style="font-size:100px;">{{hexagrams}}</p>
+        <p></p>
+    </div>
+    <div>
+
+    </div> 
+    {% for reading in readings %}
+    <div>
+        <p style="padding:20px">{{ reading }} </p>
+    </div>
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}
