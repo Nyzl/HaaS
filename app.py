@@ -26,8 +26,11 @@ def retry_wrap(fn):
 def home():
     #logo = generator.generate_hex(0)
     hexs = generator.generate_hex(6)
-    hexagrams = ''.join(hexs[0])
-    readings = hexs[1]
+    hexagrams = ''
+    for h in hexs:
+        #hexagrams.append(h['hex'])
+        hexagrams += h['hex']
+    readings = hexs
     return render_template('index.html', title='Home', hexagrams=hexagrams, readings=readings)
 
 @app.route('/somewhereelse')

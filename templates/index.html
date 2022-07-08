@@ -3,17 +3,15 @@
 {% block hex %}
 
 <div id="contents" class="app-c-contents-list-with-body gem-c-govspeak">
-    <div>
+    <div class="govuk-heading-m">
         <h2><p>This is your reading </p></h2>
-        <p style="font-size:100px;">{{hexagrams}}</p>
-        <p></p>
+        <p class="govuk-heading-xl">{{hexagrams}}</p>
     </div>
-    <div>
 
-    </div> 
     {% for reading in readings %}
-    <div>
-        <p style="padding:20px">{{ reading }} </p>
+    <div class="govuk-body">
+        <p class="govuk-heading-s">{{ reading.character }} - {{ reading.pinyin }} - {{ reading.name }}</p>
+        <p>{{ reading.meaning }}</p>
     </div>
     {% endfor %}
 
