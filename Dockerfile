@@ -18,4 +18,4 @@ ENV PORT 8080
 ENV GUNICORN_CMD_ARGS="--timeout 900 --graceful-timeout 900 --workers 2"
 EXPOSE 8080
 
-CMD ["gunicorn", "wsgi:app"]
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 wsgi:app
