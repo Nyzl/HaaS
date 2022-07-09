@@ -1,6 +1,6 @@
 # This is the Flask app
 
-import os, logging
+import os, logging, json
 from retrying import retry
 from flask import Flask, request, render_template, Response, stream_with_context
 from src import generator
@@ -33,9 +33,11 @@ def home():
     readings = hexs
     return render_template('index.html', title='Home', hexagrams=hexagrams, readings=readings)
 
-@app.route('/somewhereelse')
-def somewhereelse():
-    print("hello")
+@app.route('/api')
+def api():
+    hexs = generator.generate_hex(6)
+    hex_json = json.dumps(hexs)
+    return hex_json
 
 
 if __name__ == '__main__':
