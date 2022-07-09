@@ -6,3 +6,6 @@ docker-build:
 
 docker-run:
 	docker run =p 80:8080 haas
+
+docker-clean:
+	docker container prune -f

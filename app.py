@@ -33,12 +33,17 @@ def home():
     readings = hexs
     return render_template('index.html', title='Home', hexagrams=hexagrams, readings=readings)
 
-@app.route('/api')
-def api():
+@app.route('/ascii_api')
+def ascii_api():
     hexs = generator.generate_hex(6)
     hex_json = json.dumps(hexs)
     return hex_json
 
+@app.route('/api')
+def api():
+    hexs = generator.generate_hex(6)
+    hex_json = json.dumps(hexs, ensure_ascii=False)
+    return hex_json
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
