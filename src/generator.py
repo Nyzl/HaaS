@@ -1,9 +1,10 @@
 import random
 from src.hex import hex_codes
 
+
 def generate_hex(n):
     symbol = ["■■■■■■■■■■  ", "■■■■  ■■■■  "]
-    gram = {0:[],1:[],2:[],3:[],4:[],5:[]}
+    gram = {0: [], 1: [], 2: [], 3: [], 4: [], 5: []}
     hexs = []
     for row in range(6):
         line = ""
@@ -15,8 +16,9 @@ def generate_hex(n):
     for g in gram:
         bin = ''.join(str(x) for x in gram[g])
         hexs.append(hex_codes[bin])
-    
+
     return (hexs)
+
 
 def generate_reading(x):
     return "not implemented yet"
