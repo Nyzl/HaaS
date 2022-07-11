@@ -1,24 +1,10 @@
 .govuk-link{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline
 }
-/*! Copyright (c) 2011 by Margaret Calvert & Henrik Kubel. All rights reserved. The font has been customised for exclusive use on gov.uk. This cut is not commercially available. */
-@font-face{
-    font-family:GDS Transport;
-    font-style:normal;
-    font-weight:400;
-    src:url(./assets/fonts/light-94a07e06a1-v2.woff2) format("woff2"),url(./assets/fonts/light-f591b13f7d-v2.woff) format("woff");
-    font-display:fallback
-}
-@font-face{
-    font-family:GDS Transport;
-    font-style:normal;
-    font-weight:700;
-    src:url(./assets/fonts/bold-b542beb274-v2.woff2) format("woff2"),url(./assets/fonts/bold-affa96571d-v2.woff) format("woff");
-    font-display:fallback
-}
+
 @media print{
     .govuk-link{
         font-family:sans-serif
@@ -93,7 +79,7 @@
     color:#0b0c0c
 }
 .govuk-list{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -161,7 +147,7 @@
 }
 .govuk-heading-xl{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -198,7 +184,7 @@
 }
 .govuk-heading-l{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -235,7 +221,7 @@
 }
 .govuk-heading-m{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -272,7 +258,7 @@
 }
 .govuk-heading-s{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -308,7 +294,7 @@
     }
 }
 .govuk-caption-xl{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -338,7 +324,7 @@
     }
 }
 .govuk-caption-l{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -373,7 +359,7 @@
     }
 }
 .govuk-caption-m{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -403,7 +389,7 @@
 }
 .govuk-body-l,.govuk-body-lead{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -439,7 +425,7 @@
 }
 .govuk-body,.govuk-body-m{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -475,7 +461,7 @@
 }
 .govuk-body-s{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -511,7 +497,7 @@
 }
 .govuk-body-xs{
     color:#0b0c0c;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -621,7 +607,7 @@
     }
 }
 .govuk-button-group .govuk-link{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -918,7 +904,7 @@
     padding-bottom:15px
 }
 .govuk-accordion__section-button{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -971,7 +957,7 @@
     display:block
 }
 .js-enabled .govuk-accordion__show-all{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -1197,7 +1183,7 @@
     font-size:14px;
     font-size:.875rem;
     line-height:1.14286;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline;
@@ -1276,7 +1262,7 @@
     left:0
 }
 .govuk-breadcrumbs{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -1350,7 +1336,7 @@
     display:none
 }
 .govuk-breadcrumbs__link{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline
@@ -1403,7 +1389,7 @@
     }
 }
 .govuk-button{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -1564,7 +1550,7 @@
     }
 }
 .govuk-error-message{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1612,7 +1598,7 @@
     }
 }
 .govuk-fieldset__legend{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -1647,7 +1633,7 @@
     }
 }
 .govuk-fieldset__legend--xl{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1675,7 +1661,7 @@
     }
 }
 .govuk-fieldset__legend--l{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1703,7 +1689,7 @@
     }
 }
 .govuk-fieldset__legend--m{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1731,7 +1717,7 @@
     }
 }
 .govuk-fieldset__legend--s{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1763,7 +1749,7 @@
     font-weight:inherit
 }
 .govuk-hint{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -1801,7 +1787,7 @@
     margin-top:-5px
 }
 .govuk-label{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -1832,7 +1818,7 @@
     }
 }
 .govuk-label--xl{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1860,7 +1846,7 @@
     }
 }
 .govuk-label--l{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1888,7 +1874,7 @@
     }
 }
 .govuk-label--m{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1916,7 +1902,7 @@
     }
 }
 .govuk-label--s{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -1946,7 +1932,7 @@
     margin:0
 }
 .govuk-checkboxes__item{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2054,7 +2040,7 @@
     opacity:.5
 }
 .govuk-checkboxes__divider{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2162,7 +2148,7 @@
     }
 }
 .govuk-textarea{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2226,7 +2212,7 @@
     margin-bottom:5px
 }
 .govuk-character-count__message{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     -webkit-font-feature-settings:"tnum" 1;
@@ -2268,7 +2254,7 @@
     outline:none
 }
 .govuk-summary-list{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2406,7 +2392,7 @@
     }
 }
 .govuk-input{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2501,7 +2487,7 @@
     }
 }
 .govuk-input__prefix,.govuk-input__suffix{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2593,7 +2579,7 @@
     margin-bottom:0
 }
 .govuk-details{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2717,7 +2703,7 @@
     outline:3px solid #fd0
 }
 .govuk-error-summary__title{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -2751,7 +2737,7 @@
     }
 }
 .govuk-error-summary__body{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2792,7 +2778,7 @@
 }
 .govuk-error-summary__list a{
     font-weight:700;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline
@@ -2821,7 +2807,7 @@
     color:#0b0c0c
 }
 .govuk-file-upload{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2866,7 +2852,7 @@
     box-shadow:inset 0 0 0 4px #0b0c0c
 }
 .govuk-footer{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -2904,7 +2890,7 @@
     }
 }
 .govuk-footer__link{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline
@@ -3076,7 +3062,7 @@
     margin-bottom:0
 }
 .govuk-header{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3150,7 +3136,7 @@
     vertical-align:bottom
 }
 .govuk-header__product-name{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3178,7 +3164,7 @@
     }
 }
 .govuk-header__link{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:none
@@ -3207,7 +3193,7 @@
     text-decoration:none
 }
 .govuk-header__link--homepage{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3243,7 +3229,7 @@
 .govuk-header__link--service-name{
     display:inline-block;
     margin-bottom:10px;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3297,7 +3283,7 @@
     }
 }
 .govuk-header__menu-button{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3426,7 +3412,7 @@
     }
 }
 .govuk-header__navigation-item a{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3480,7 +3466,7 @@
     }
 }
 .govuk-inset-text{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3526,7 +3512,7 @@
     margin-bottom:0
 }
 .govuk-notification-banner{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3573,7 +3559,7 @@
     }
 }
 .govuk-notification-banner__title{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3625,7 +3611,7 @@
     margin-bottom:0
 }
 .govuk-notification-banner__heading{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3654,7 +3640,7 @@
     }
 }
 .govuk-notification-banner__link{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline
@@ -3696,7 +3682,7 @@
     color:#0b0c0c
 }
 .govuk-panel{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3748,7 +3734,7 @@
 .govuk-panel__title{
     margin-top:0;
     margin-bottom:30px;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3778,7 +3764,7 @@
     margin-bottom:0
 }
 .govuk-panel__body{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3813,7 +3799,7 @@
     letter-spacing:1px;
     text-decoration:none;
     text-transform:uppercase;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -3882,7 +3868,7 @@
     border-bottom:1px solid #b1b4b6
 }
 .govuk-phase-banner__content{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3930,7 +3916,7 @@
     }
 }
 .govuk-tabs__title{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -3970,7 +3956,7 @@
     }
 }
 .govuk-tabs__list-item{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -4009,7 +3995,7 @@
     }
 }
 .govuk-tabs__tab{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline;
@@ -4140,7 +4126,7 @@
     }
 }
 .govuk-radios__item{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -4256,7 +4242,7 @@
     }
 }
 .govuk-radios__divider{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -4367,7 +4353,7 @@
     }
 }
 .govuk-select{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -4426,7 +4412,7 @@
     -webkit-clip-path:inset(50%)!important;
     clip-path:inset(50%)!important;
     white-space:nowrap!important;
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     text-decoration:underline;
@@ -4499,7 +4485,7 @@
     outline:none
 }
 .govuk-table{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:400;
@@ -4546,7 +4532,7 @@
     vertical-align:top
 }
 .govuk-table__cell--numeric{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     -webkit-font-feature-settings:"tnum" 1;
@@ -4577,7 +4563,7 @@
     text-align:left
 }
 .govuk-table__caption--xl{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -4605,7 +4591,7 @@
     }
 }
 .govuk-table__caption--l{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -4633,7 +4619,7 @@
     }
 }
 .govuk-table__caption--m{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -4661,7 +4647,7 @@
     }
 }
 .govuk-table__caption--s{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -4711,7 +4697,7 @@
     white-space:nowrap!important
 }
 .govuk-warning-text__icon{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
@@ -4752,7 +4738,7 @@
     }
 }
 .govuk-warning-text__text{
-    font-family:GDS Transport,arial,sans-serif;
+    font-family:arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     font-weight:700;
