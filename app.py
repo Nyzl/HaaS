@@ -47,5 +47,15 @@ def api():
     return hex_json
 
 
+@app.route('/analytics')
+def analytics():
+    hexs = generator.generate_hex(6)
+    hexagrams = ''
+    for h in hexs:
+        hexagrams += h['hex']
+    readings = hexs
+    return render_template('index-a.html', title='Home', hexagrams=hexagrams, readings=readings)
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
