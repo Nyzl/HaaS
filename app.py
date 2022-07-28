@@ -47,14 +47,26 @@ def api():
     return hex_json
 
 
-@app.route('/analytics')
-def analytics():
+@app.route('/analytics_ua')
+def analytics_ua():
+    container_id = 'GTM-5S9XWS6'
     hexs = generator.generate_hex(6)
     hexagrams = ''
     for h in hexs:
         hexagrams += h['hex']
     readings = hexs
-    return render_template('index-a.html', title='Home', hexagrams=hexagrams, readings=readings)
+    return render_template('index-a.html', container_id=container_id, title='Home', hexagrams=hexagrams, readings=readings)
+
+
+@app.route('/analytics_ga4')
+def analytics_ga4():
+    container_id = 'GTM-TTVXKG3'
+    hexs = generator.generate_hex(6)
+    hexagrams = ''
+    for h in hexs:
+        hexagrams += h['hex']
+    readings = hexs
+    return render_template('index-a.html', container_id=container_id, title='Home', hexagrams=hexagrams, readings=readings)
 
 
 if __name__ == '__main__':
