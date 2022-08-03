@@ -29,9 +29,11 @@
   <![endif]-->
 
   <meta property="og:image" content="release-v4.1.0/assets/images/govuk-opengraph-image.png">
+  {% block gtm_head %}{% endblock %}
 </head>
 
 <body class="govuk-template__body ">
+  {% block gtm_body %}{% endblock %}
   <script>
     document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
 

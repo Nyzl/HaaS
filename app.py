@@ -4,7 +4,7 @@ import os
 import logging
 import json
 from retrying import retry
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from src import generator
 
 
@@ -23,21 +23,9 @@ def retry_wrap(fn):
 
 
 #  define endpoints
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
-    hexs = generator.generate_hex(6)
-    hexagrams = ''
-    for h in hexs:
-        hexagrams += h['hex']
-    readings = hexs
-    return render_template('index.html', title='Home', hexagrams=hexagrams, readings=readings)
-
-
-@app.route('/ascii_api')
-def ascii_api():
-    hexs = generator.generate_hex(6)
-    hex_json = json.dumps(hexs)
-    return hex_json
+    return render_template('index.html', title='Home')
 
 
 @app.route('/api')
@@ -47,26 +35,22 @@ def api():
     return hex_json
 
 
-@app.route('/analytics_ua')
+@app.route('/analytics', methods=['GET', 'POST'])
 def analytics_ua():
-    container_id = 'GTM-5S9XWS6'
-    hexs = generator.generate_hex(6)
+    type = request.args.get('type', default='ua')
+    ga_version = {'ua': 'GTM-5S9XWS6', 'ga4': 'GTM-TTVXKG3'}
+    container_id = ga_version[type]
+    if request.method == "POST":
+        input = request.form['hex_count'] or '6'
+        num = int(input)
+    else:
+        num = 6
+    hexs = generator.generate_hex(num)
     hexagrams = ''
     for h in hexs:
         hexagrams += h['hex']
     readings = hexs
-    return render_template('index-a.html', container_id=container_id, title='Home', hexagrams=hexagrams, readings=readings)
-
-
-@app.route('/analytics_ga4')
-def analytics_ga4():
-    container_id = 'GTM-TTVXKG3'
-    hexs = generator.generate_hex(6)
-    hexagrams = ''
-    for h in hexs:
-        hexagrams += h['hex']
-    readings = hexs
-    return render_template('index-a.html', container_id=container_id, title='Home', hexagrams=hexagrams, readings=readings)
+    return render_template('index-a.html', container_id=container_id, title='Hexagrams', hexagrams=hexagrams, readings=readings)
 
 
 if __name__ == '__main__':
