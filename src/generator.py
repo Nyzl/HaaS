@@ -5,7 +5,7 @@ from src.hex import hex_codes
 def generate_hex(n):
     hexs = []
     hexagrams = []
-    
+
     for col in range(n):
         gram = []
         for row in range(6):

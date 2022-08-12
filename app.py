@@ -25,7 +25,8 @@ def retry_wrap(fn):
 #  define endpoints
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('index.html', title='Home')
+    return render_template(
+        'index.html', title='Home')
 
 
 @app.route('/api')
@@ -50,7 +51,8 @@ def analytics_ua():
     for h in hexs:
         hexagrams += h['hex']
     readings = hexs
-    return render_template('index-a.html', container_id=container_id, title='Hexagrams', hexagrams=hexagrams, readings=readings)
+    return render_template(
+        'index-a.html', container_id=container_id, title='Hexagrams', hexagrams=hexagrams, readings=readings)
 
 
 if __name__ == '__main__':
