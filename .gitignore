@@ -112,3 +112,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDE stuff
+.vscode/
+
+# generated static assets
+haas/static/cookies*.js
+
+# node stuff
+node_modules/
