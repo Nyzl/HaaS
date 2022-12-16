@@ -1,6 +1,6 @@
+"""Webassets bundles."""
 from flask_assets import Bundle
 from webassets.filter import get_filter
-
 
 cookies_js = Bundle(
     "javascripts/utils.js",
@@ -12,5 +12,5 @@ cookies_js = Bundle(
         binary="node_modules/@babel/cli/bin/babel.js",
         presets="@babel/env",
     ),
-    output="cookies-%(version)s.js",
+    output="cookies.js",
 )

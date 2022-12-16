@@ -1,7 +1,9 @@
+"""Hexagrams as a Service Flask app."""
 from flask import Flask
 from flask_assets import Environment
-from jinja2 import ChoiceLoader, PackageLoader, PrefixLoader
-
+from jinja2 import ChoiceLoader
+from jinja2 import PackageLoader
+from jinja2 import PrefixLoader
 
 app = Flask(__name__, static_url_path="/assets")
 assets = Environment(app)
@@ -14,4 +16,4 @@ app.jinja_loader = ChoiceLoader(
     ]
 )
 
-import haas.views
+import haas.views  # noqa
