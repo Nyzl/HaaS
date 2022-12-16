@@ -1,4 +1,5 @@
-Flask
-flask-assets
-gunicorn
-govuk-frontend-jinja
+Flask==2.2.2
+flask-assets==2.0
+govuk-frontend-jinja==2.3.0
+gunicorn==20.1.0
+python-dotenv==0.21.0
