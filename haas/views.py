@@ -20,12 +20,12 @@ def api():
 
 
 @app.route("/analytics", methods=["GET", "POST"])
-def analytics_ua():
+def analytics():
     """Render a hexagram reading with the submitted number of hexagrams."""
-    ga_version = request.args.get("type", default="ua")
+    ga_version = request.args.get("type", default="ga4")
     container_id = {
         "ua": "GTM-5S9XWS6",
-        "ga4": "GTM-TTVXKG3",
+        "ga4": "GTM-NBCMVLT",
     }[ga_version]
 
     if request.method == "POST":
