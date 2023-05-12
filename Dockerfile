@@ -1,21 +1,24 @@
-FROM python:3.9
+FROM python:3.10-slim AS build
 
-LABEL version="1.0"
-LABEL maintainer="Ian Ansell"
+WORKDIR /home/app
 
-RUN pip install --upgrade pip
+RUN python -m venv /home/app/venv
+ENV PATH="/home/app/venv/bin:$PATH"
 
-COPY . /haas
-WORKDIR /haas
-
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN chmod 444 *.py
-RUN chmod 444 requirements.txt
 
-ENV PORT 8080
+FROM python:3.10-slim@sha256:030ead045da5758362ae198e9025671f22490467312dbad9af6b29a6d6bc029b
 
-ENV GUNICORN_CMD_ARGS="--timeout 900 --graceful-timeout 900 --workers 2"
-EXPOSE 8080
+RUN groupadd -g 999 app && \
+    useradd -r -u 999 -g app app
+USER 999
+WORKDIR /home/app
 
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 wsgi:app
+COPY --chown=app:app --from=build /home/app/venv ./venv
+COPY --chown=app:app haas/ haas/
+
+ENV PATH="/home/app/venv/bin:$PATH"
+
+CMD gunicorn haas:app

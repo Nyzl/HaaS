@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="govuk-heading-m">
+    <h2><p>This is your reading </p></h2>
+    <p class="govuk-heading-xl">{{ hexagrams|map(attribute='hex')|join('') }}</p>
+  </div>
+
+  {% for hexagram in hexagrams %}
+    <div class="govuk-body">
+      <p class="govuk-heading-s">{{ hexagram.character }} - {{ hexagram.pinyin }} - {{ hexagram.name }}</p>
+      <p>{{ hexagram.meaning }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}
